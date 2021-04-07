@@ -8,8 +8,8 @@ const app = express();
 
 const s3 = new AWS.S3({
     credentials: {
-        accessKeyId: process.env.AWS_ID || "AKIAWZM72CQGLNNS566S",
-        secretAccessKey: process.env.AWS_SECRET || "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"
+        accessKeyId: process.env.AWS_ID,
+        secretAccessKey: process.env.AWS_SECRET
     }
 })
 const storage = multer.memoryStorage({
